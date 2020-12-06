@@ -1,0 +1,61 @@
+$primary-color: #333;
+$secondary-color: #f6f6f6;
+$background-color: #f6f6f6;
+$button-color: #93272c;
+$button-color2: #605245;
+$logo-color: #fff3b2;
+$font-color: #1d1d1d;
+$main-font: adobe-garamond-pro, serif;
+$header: 28px;
+$subheader: 22px;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition {
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin header {
+    line-height: 3rem;
+    font-size: 37pt;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: $font-color;
+}
+
+@mixin sub {
+    font-size: 28pt;
+    line-height: 3rem;
+    color: rgba(20, 20, 20, 0.85);
+}
+
+@mixin color-dim {
+    color: rgba(20, 20, 20, 0.75);
+}
+
+@mixin back-color {
+    background: $secondary-color;
+}
+
+@mixin image-size {
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+@mixin margins {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+@mixin border-bottom {
+    border-bottom: 1px solid $primary-color;
+}
+
+@mixin border-top {
+    border-top: 1px solid $primary-color;
+}

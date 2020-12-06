@@ -1,0 +1,90 @@
+.checkout-image {
+    @include image-size;
+    background-image: url(/images/login-min.jpeg);
+    width: 100%;
+    height: 45vh;
+}
+
+// CHECKOUT TEXT AND ICON
+.checkout {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+
+    &__icon {
+        margin-top: 50px;
+        color: $button-color;
+    }
+
+    &__header {
+        @include header;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+    &__sub {
+        @include border-top;
+        line-height: 1.5rem;
+        margin: 0 10%;
+        padding-top: 20px;
+    }
+}
+
+// RETURN BUTTON
+.return-home {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: $button-color;
+
+    &__text {
+        padding: 34px;
+        color: $secondary-color;
+    }
+}
+
+// PAYMENT FOOTER
+.payment-footer {
+    background-color: $primary-color;
+    width: 100%;
+    height: 40px;
+    color: $logo-color;
+    text-align: center;
+
+    &__info {
+        padding-top: 13px;
+        font-size: 20pt;
+    }
+}
+
+// MEDIA MAX 768
+@media screen and (max-width: 768px) {
+// CHECKOUT TEXT AND ICON
+.checkout {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+
+    &__icon {
+        margin-top: 70px;
+        color: $button-color;
+    }
+
+    &__header {
+        @include header;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        line-height: 6rem;
+        font-size: 33px;
+    }
+
+    &__sub {
+        @include border-top;
+        line-height: 1.5rem;
+        margin: 0 10%;
+        padding-top: 30px;
+        font-size: 20px;
+    }
+}
+}

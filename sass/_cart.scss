@@ -1,0 +1,147 @@
+// MAIN CART
+.cart {
+    background-color: $primary-color;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 40px;
+    z-index: 3;
+    transform: translateY(0);
+    transition-timing-function: ease-in;
+    transition: 0.6s;
+
+    // CLOSE CART TRANSITION
+    &--closed {
+        transition: 0.25s;
+        transition-timing-function: ease-out;
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+
+    // CART HEADER
+    &__header {
+        color: $secondary-color;
+        font-size: 40px;
+        margin: 65px 0;
+        width: 70%;
+        line-height: 2.5rem;
+    }
+    font-weight: 600;
+
+    // CLOSE CART BUTTON
+    &__close {
+        position: absolute;
+        top: 70px;
+        right: 27px;
+        background: none;
+        border: none;
+        color: $logo-color;
+        font-size: 50px;
+        line-height: 1rem;
+        cursor: pointer;
+    }
+
+    // REMOVE CART ITEMS
+    &__remove {
+        right: 20px;
+        background: none;
+        border: none;
+        color: $logo-color;
+        font-size: 20px;
+        line-height: 1rem;
+        cursor: pointer;
+    }
+
+    // CART ITEMS
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $logo-color;
+        margin-bottom: 10px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    &__content {
+        color: $secondary-color;
+        display: flex;
+        font-size: 20px;
+        line-height: 1.5rem;
+        letter-spacing: 3px;
+
+        &--price {
+            position: absolute;
+            right: 80px;
+        }
+    }
+
+    // CART TOTAL
+    &__total {
+        padding-top: 50px;
+        color: $secondary-color;
+        font-size: 27px;
+        line-height: 1.5rem;
+        letter-spacing: 3px;
+
+        &--price {
+            position: absolute;
+            right: 80px;
+            margin-top: -23px;
+        }
+    }
+
+    // CART SEND ORDER
+    &__checkout {
+        bottom: 50px;
+        margin: 60px auto 0;
+        padding: 12px 60px;
+        font-size: 30px;
+        display: block;
+        color: $primary-color;
+        background-color: $logo-color;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: $main-font;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    // MAIN CART
+.cart {
+
+    // CART HEADER
+    &__header {
+        color: $secondary-color;
+        font-size: 40px;
+        line-height: 2.5rem;
+    }
+
+    // CART ITEMS
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $logo-color;
+        margin-bottom: 10px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    &__content {
+        font-size: 18px;
+        line-height: 1.5rem;
+    }
+
+    // CART SEND ORDER
+    &__checkout {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px;
+        font-size: 30px;
+        border-radius: 0px;
+    }
+}
+}

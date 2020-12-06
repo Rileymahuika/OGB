@@ -1,0 +1,78 @@
+// MAIN HEADERS
+.display-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__image {
+        @include image-size;
+        background-image: url(/images/login-min.jpeg);
+        width: 100%;
+        height: 70vh;
+    }
+
+    &__header {
+        @include back-color;
+        @include header;
+        font-size: 30px;
+        padding: 80px 0 40px;
+    }
+
+    &__sub {
+        @include back-color;
+        @include sub;
+        font-size: 25px;
+        padding: 0 0 20px;
+    }
+
+    &__para {
+        @include back-color;
+        @include color-dim;
+        padding-bottom: 20px;
+    }
+}
+
+// LIST ITEMS
+.items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $secondary-color;
+
+    .item-name {
+        @include border-bottom;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        font-size: 27pt;
+        padding-bottom: 15px;
+        letter-spacing: 3px;
+
+        &__description {
+            @include color-dim;
+            margin: 15px 20% 5px;
+            line-height: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        &__price {
+            padding-top: 20px;
+        }
+
+        &__button {
+            margin: 15px 5px 0 5px;
+            width: 100px;
+            background-color: $button-color;
+            color: $secondary-color;
+            padding: 10px 2px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $primary-color;
+                color: $secondary-color;
+            }
+        }
+    }
+}

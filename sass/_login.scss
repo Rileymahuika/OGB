@@ -1,0 +1,89 @@
+.background-color {
+    background-color: #f6f6f6;
+}
+
+// IMG //
+.login {
+    @include image-size;
+    width: 100%;
+    height: 40vh;
+    background-image: url(/images/login-min.jpeg);
+
+    &__logo {
+        object-fit: cover;
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 200px;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+// HEADER AND LOGIN //
+.main-section {
+    @include margins;
+    text-align: center;
+    height: 700px;
+
+    // HEADER //
+    &__header {
+        @include header;
+        margin: 50px 0 10px;
+    }
+
+    &__sub {
+        @include sub;
+        padding-bottom: 2.5rem;
+    }
+
+    // LOGIN FORM //
+    .login-section {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+        border-top: 1px solid;
+    }
+
+    &__login-form {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    // LOGIN BUTTON //
+    &__button {
+        background-color: $button-color;
+        color: white;
+        padding: 14px 50px;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+
+    &__remember {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+// FOOTER //
+.social-bar {
+    width: 100vw;
+    height: 100px;
+    background-color: #333;
+
+    &__icons {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        svg {
+            margin: 25px 25px;
+        }
+    }
+}

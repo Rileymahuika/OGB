@@ -1,0 +1,53 @@
+// MAIN IMAGE
+.landing-image {
+    @include image-size;
+    background-image: url(/images/shop3-min.jpg);
+    width: 100%;
+    height: 80vh;
+}
+
+.background-color {
+    @include back-color;
+    z-index: -1;
+}
+
+// MAIN TEXT AREA
+.text-area {
+    text-align: center;
+
+    &__header {
+        @include header;
+        padding: 70px 0 10px 0;
+    }
+
+    &__subheader {
+        @include sub;
+        @include margins;
+        @include border-bottom;
+        padding-bottom: 2.5rem;
+    }
+
+    &__para {
+        @include color-dim;
+        padding: 0px 15% 50px;
+        margin-top: 30px;
+        line-height: 1.5rem;
+    }
+
+    &__button {
+        width: 100%;
+        height: 100px;
+        font-size: $header;
+        background-color: $button-color;
+        color: white;
+        padding: 14px 28px;
+        border: none;
+        cursor: pointer;
+        font-family: $main-font;
+
+        &:hover {
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+}

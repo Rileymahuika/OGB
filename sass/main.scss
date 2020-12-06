@@ -1,0 +1,31 @@
+@import "config";
+@import "landing";
+@import "login";
+@import "mainpage";
+@import "contents";
+@import "nav";
+@import "progressbar";
+@import "popup";
+@import "cart";
+@import "checkout";
+
+body {
+    font-family: adobe-garamond-pro, serif;
+    line-height: 1rem;
+    height: 100%;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+

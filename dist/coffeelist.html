@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/rud4rnc.css">
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
+    <title>Coffee List</title>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header>
+
+        <div class="menu-btn-background">
+            <div class="menu-btn">
+                <span class="menu-btn__burger"></span>
+            </div>
+        </div>
+
+        <nav class="nav nav--hidden">
+            <ul class="menu-nav">
+
+                <!-- HOMEPAGE -->
+                <li class="menu-nav__item">
+                    <a class="menu-nav__link" href="/dist/mainpage.html">HOME</a>
+                </li>
+
+                <!-- DRINKS LIST -->
+                <li class="menu-nav__item">
+                    <a class="menu-nav__link" href="#">DRINKS</a>
+                    <ul class="dropdown">
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__link">COCKTAILS</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__link">BEER</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__link">WINE</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="/dist/coffeelist.html" class="dropdown__link">COFFEE & TEA</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- FOOD MENU -->
+                <li class="menu-nav__item">
+                    <a class="menu-nav__link" href="#">FOOD</a>
+                    <ul class="dropdown">
+                        <li class="dropdown__item">
+                            <a href="/dist/brunchlist.html" class="dropdown__link">BRUNCH</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__link">BAR FOOD</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- STORES -->
+                <li class="menu-nav__item">
+                    <a class="menu-nav__link" href="#">STORES</a>
+                    <ul class="dropdown">
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__link">MERCHANDISE</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__link">BARBER SHOP</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- FEEDBACK -->
+                <li class="menu-nav__item">
+                    <a class="menu-nav__link" href="#">FEEDBACK</a>
+                </li>
+
+                <!-- NEWS -->
+                <li class="menu-nav__item">
+                    <a class="menu-nav__link"
+                        href="https://static1.squarespace.com/static/58f6f66537c58165beb8d8d7/t/5e94ea37be74603c922a44c1/1586817628791/The+OGB+Regular+Issue+10.pdf"
+                        target="_blank" alt="NEWS-PAPER">NEWS</a>
+                </li>
+
+                <!-- CART -->
+                <li class="menu-nav__item">
+                    <a onclick="cartToggle()">
+                        <i class="fas fa-shopping-cart fa-1x" style="color:white"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN-CONTENT -->
+    <div class="display-main">
+        <div class="display-main__image">
+        </div>
+        <div class="display-main__header">
+            <h1>OGB Coffee & Tea</h1>
+        </div>
+
+        <div class="display-main__sub">
+            <h3>SML | MAIHANA 4.5 <br> REG | HE WHAKAMAHI 5.5 <br> LRG | RARAHI 6.5 </h3>
+        </div>
+
+        <div class="display-main__para">
+            <h4>Available from 11am - 9pm, every day.</h4>
+        </div>
+
+    </div>
+
+    <!-- COFFEE ITEMS -->
+    <!-- ESPRESSO -->
+    <div class="items">
+        <div class="item-name">
+            <h5>ESPRESSO</h5>
+        </div>
+        <div class="item-name__description">
+            <p>Espressos are the purest coffee experience you can get, and while they’re not for everyone, it can be a
+                truly singular drinking experience when you find a good brew</p>
+        </div>
+        <div class="flex-buttons">
+            <div class="popup-box">
+                <span id="span-one" class="hidden">ADDED TO CART</span>
+            </div>
+            <div onclick="complexToggle('span-one')" id="button-one" class="button">
+                <p>SML</p>
+            </div>
+        </div>
+
+        <!-- FLATWHITE -->
+        <div class="items">
+            <div class="item-name">
+                <h5>FLAT WHITE</h5>
+            </div>
+            <div class="item-name__description">
+                <p>The two most Kiwi coffees available are the long black and the flat white – as both originated in New
+                    Zealand and Australia.</p>
+            </div>
+        </div>
+
+        <div class="flex-buttons">
+            <div class="popup-box">
+                <span id="span-one" class="hidden">ADDED TO CART</span>
+            </div>
+            <div onclick="complexToggle('span-one')" id="button-one" class="button">
+                <p>SML</p>
+            </div>
+
+            <div class="popup-box">
+                <span id="span-two" class="hidden">ADDED TO CART</span>
+            </div>
+            <div onclick="complexToggle('span-two')" id="button-two" class="button">
+                <p>MED</p>
+            </div>
+
+            <div class="popup-box">
+                <span id="span-three" class="hidden">ADDED TO CART</span>
+            </div>
+            <div onclick="complexToggle('span-three')" id="button-three" class="button">
+                <p>LRG</p>
+            </div>
+        </div>
+
+        <!-- LONG BLACK -->
+        <div class="items">
+            <div class="item-name">
+                <h5>LONG BLACK</h5>
+            </div>
+            <div class="item-name__description">
+                <p>Long blacks can be quite strong and have more crema than an Americano</p>
+            </div>
+
+            <div class="flex-buttons">
+                <div class="popup-box">
+                    <span id="span-one" class="hidden">ADDED TO CART</span>
+                </div>
+                <div onclick="complexToggle('span-one')" id="button-one" class="button">
+                    <p>MED</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- LATTE -->
+        <div class="items">
+            <div class="item-name">
+                <h5>LATTE</h5>
+            </div>
+            <div class="item-name__description">
+                <p>It is usually quite frothy, and you’ll occasionally encounter cafes that don’t understand the
+                    difference
+                    between this and a flat white.</p>
+            </div>
+
+            <div class="flex-buttons">
+                <div class="popup-box">
+                    <span id="span-one" class="hidden">ADDED TO CART</span>
+                </div>
+                <div onclick="complexToggle('span-one')" id="button-one" class="button">
+                    <p>SML</p>
+                </div>
+
+                <div class="popup-box">
+                    <span id="span-two" class="hidden">ADDED TO CART</span>
+                </div>
+                <div onclick="complexToggle('span-two')" id="button-two" class="button">
+                    <p>MED</p>
+                </div>
+
+                <div class="popup-box">
+                    <span id="span-three" class="hidden">ADDED TO CART</span>
+                </div>
+                <div onclick="complexToggle('span-three')" id="button-three" class="button">
+                    <p>LRG</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CAPPUCCINO -->
+        <div class="items">
+            <div class="item-name">
+                <h5>CAPPUCCINO</h5>
+            </div>
+            <div class="item-name__description">
+                <p>Possibly the most popular type of coffee in the world, a cappuccino consists of three layers (kind of
+                    like a cake).</p>
+            </div>
+            <div class="flex-buttons">
+                <div class="popup-box">
+                    <span id="span-one" class="hidden">ADDED TO CART</span>
+                </div>
+                <div onclick="complexToggle('span-one')" id="button-one" class="button">
+                    <p>SML</p>
+                </div>
+
+                <div class="popup-box">
+                    <span id="span-two" class="hidden">ADDED TO CART</span>
+                </div>
+                <div onclick="complexToggle('span-two')" id="button-two" class="button">
+                    <p>MED</p>
+                </div>
+
+                <div class="popup-box">
+                    <span id="span-three" class="hidden">ADDED TO CART</span>
+                </div>
+                <div onclick="complexToggle('span-three')" id="button-three" class="button">
+                    <p>LRG</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- MACCHIATO -->
+        <div class="items">
+            <div class="item-name">
+                <h5>MACCHIATO</h5>
+            </div>
+            <div class="item-name__description">
+                <p> similar to a cappuccino, it’s usually stronger as there’s no steamed milk added and it’s also
+                    smaller
+                </p>
+            </div>
+
+            <div class="flex-buttons">
+                <div class="popup-box">
+                    <span id="span-one" class="hidden">ADDED TO CART</span>
+                </div>
+                <div onclick="complexToggle('span-one')" id="button-one" class="button">
+                    <p>SML</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOCHACCINO -->
+        <div class="items">
+            <div class="item-name">
+                <h5>MOCHACCINO</h5>
+            </div>
+            <div class="item-name__description">
+                <p> A ‘mocha’ is just a latte with added chocolate powder or syrup, topped with whipcream on request.
+                </p>
+            </div>
+
+            <div class="flex-buttons">
+                <div class="popup-box">
+                    <span id="span-one" class="hidden">ADDED TO CART</span>
+                </div>
+                <div onclick="complexToggle('span-one')" id="button-one" class="button">
+                    <p>SML</p>
+                </div>
+
+                <div class="popup-box">
+                    <span id="span-two" class="hidden">ADDED TO CART</span>
+                </div>
+                <div onclick="complexToggle('span-two')" id="button-two" class="button">
+                    <p>MED</p>
+                </div>
+
+                <div class="popup-box">
+                    <span id="span-three" class="hidden">ADDED TO CART</span>
+                </div>
+                <div onclick="complexToggle('span-three')" id="button-three" class="button">
+                    <p>LRG</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- AMERICANO -->
+        <div class="items">
+            <div class="item-name">
+                <h5>AMERICANO</h5>
+            </div>
+            <div class="item-name__description">
+                <p> American soldiers during WWII made this type of coffee to make their beverages last longer
+                </p>
+            </div>
+
+            <div class="flex-buttons">
+                <div class="popup-box">
+                    <span id="span-one" class="hidden">ADDED TO CART</span>
+                </div>
+                <div onclick="complexToggle('span-one')" id="button-one" class="button--last">
+                    <p>LRG</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INFO BAR -->
+    <a onclick="cartToggle()">
+        <div class="info-bar">
+            <button class="info-bar__check">
+                <h4 class="info-bar__check"> CHECK ORDER</h4>
+            </button>
+        </div>
+    </a>
+
+
+    <!-- INFO BAR POPUP -->
+    <aside class="cart cart--closed" id="cart">
+        <button class="cart__close" onclick="cartToggle()">&times;</button>
+        <h3 class="cart__header">In Your Cart | To Whakatau</h3>
+
+        <!-- CART ITEM 1 -->
+        <div class="cart__items">
+            <div class="cart__item">
+                <div class="cart__content">
+                    <h4>FLAT WHITE</h4>
+                    <h4 class="cart__content--price">$4.5</h4>
+                </div>
+                <div class="cart__remover">
+                    <button class="cart__remove">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CART ITEM 2 -->
+        <div class="cart__items">
+            <div class="cart__item">
+                <div class="cart__content">
+                    <h4>LONG BLACK</h4>
+                    <h4 class="cart__content--price">$4.5</h4>
+                </div>
+                <div class="cart__remover">
+                    <button class="cart__remove">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CART ITEM 3 -->
+        <div class="cart__items">
+            <div class="cart__item">
+                <div class="cart__content">
+                    <h4>EGGS BENEDICT</h4>
+                    <h4 class="cart__content--price">$16</h4>
+                </div>
+                <div class="cart__remover">
+                    <button class="cart__remove">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CART ITEM 4 -->
+        <div class="cart__items">
+            <div class="cart__item">
+                <div class="cart__content">
+                    <h4>EGGS BENEDICT WITH BACON</h4>
+                    <h4 class="cart__content--price">$19</h4>
+                </div>
+                <div class="cart__remover">
+                    <button class="cart__remove">&times;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CART TOTAL -->
+        <div class="cart__item">
+            <div class="cart__total">
+                <h4>TOTAL</h4>
+                <h4 class="cart__total--price">$44</h4>
+            </div>
+        </div>
+        </div>
+
+        <!-- CART SEND ORDER -->
+        <form action="/dist/checkout.html">
+            <button class="cart__checkout">
+                SEND ORDER
+            </button>
+        </form>
+    </aside>
+
+    <!-- PROGRESS-BAR -->
+    <div class="progress-background">
+        <div class="progress-bar">
+            <ul class="progress-bar__steps">
+                <li class="progress-bar__list active">
+                    <h4> ADDING TO CART</h4>
+                </li>
+                <li class="progress-bar__list">
+                    <h4> CHECK ORDER</h4>
+                </li>
+                <li class="progress-bar__list">
+                    <h4> ORDER SENT </h4>
+                </li>
+                <li class="progress-bar__list">
+                    <h4> MAKING ORDER </h4>
+                </li>
+                <li class="progress-bar__list">
+                    <h4>DELIVERED</h4>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="/dist/js/cart.js"></script>
+    <script src="/dist/js/nav.js"></script>
+    <script src="/dist/js/Popup.js"></script>
+
+</body>
+
+</html>
